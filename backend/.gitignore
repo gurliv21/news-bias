@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+
+# FastAPI
+*.log
+
+# OS files
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
