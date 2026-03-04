@@ -45,7 +45,7 @@ function NewsArticle() {
           {relatedArticle.map((v,index)=>(
             <div className='mb-6' key={index}>
 
-            <p className='text-white/90'>{v.title.split("-")[0]}</p>
+            <p className='text-white/90'>{v.title}</p>
             <div className='flex gap-8'><p className='text-yellow-500'>{v.source}</p>
             <a  href={v.link} className='text-blue-400'>link</a>
             </div>
