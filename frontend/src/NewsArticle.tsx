@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { similarArticles } from './services/newsService'
 import type { NewsSimilar } from './services/newsService'
@@ -43,7 +43,7 @@ function NewsArticle() {
 
         <div>
           {relatedArticle.map((v,index)=>(
-            <div className='mb-6'>
+            <div className='mb-6' key={index}>
 
             <p className='text-white/90'>{v.title.split("-")[0]}</p>
             <div className='flex gap-8'><p className='text-yellow-500'>{v.source}</p>

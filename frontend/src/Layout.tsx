@@ -1,11 +1,6 @@
-import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { newsService } from './services/newsService';
-interface LayoutProp {
-  seturl: (value: string) => void;
-  setResponse: (value: boolean) => void;
-}
 
 function Layout() {
   const [input,setInput] = useState("")
