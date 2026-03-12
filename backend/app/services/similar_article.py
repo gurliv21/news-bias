@@ -17,6 +17,7 @@ def similar_article(query:string):
             "link":i.link.text,
             "source":i.source.text if i.source else None
         })
+    print(result)
     return result
 
 

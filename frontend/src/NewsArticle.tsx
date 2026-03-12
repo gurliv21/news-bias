@@ -16,7 +16,8 @@ function NewsArticle() {
     const similarArticle=async()=>{
       try{
         console.log(article.title)
-        const response = await similarArticles(article.title)
+        const response = await similarArticles("CHOCOLATE CHIP CAKE WITH GANACHE DRIP")
+        console.log(response)
         setRelatedArticle(response)
 
       }catch(error){
